@@ -1,0 +1,91 @@
+header {
+    background-color: var(--azul-claro);
+    display: flex;
+    /* Envia los elementos a los dos extremos de la pagina */
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.lista-navegacion {
+    /* los ubica uno al lado del otro */
+    display: flex;
+    /* gap es para agregar un espacio entre los elementos de flex o grid    */
+    gap: 20px;
+    /* Para centrar los elementos a la misma altura */
+    align-items: center;
+}
+
+.linkedin-icon {
+    color: var(--gris);
+    height: 50px;
+    
+}
+
+.descarga-icon {
+    height: 15px;
+}
+
+.link-descarga {
+    color: white;
+    background-color: var(--gris);
+    padding: 10px 20px;
+    /* Para hacer el borde que rodea el boton de descarga */
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.whatsapp-icon {
+    height: 40px;
+}
+
+.foto {
+    height: 300px;
+
+}
+main {
+    /* este alto se agrega para que el main ocupe el 100% porque siempre debe ocupar el alto de nuestra pantalla */
+    height: 80vh;
+    background: linear-gradient(225deg, var(--azul-1) 20%, var(--azul-2) 90%, var(--azul-3) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: white;
+}
+
+.presentacion {
+    text-align: center;
+    /* este grid se pone para que la parte del article quede dividino en columnas y el link de whatsapp que ocupa toda la etiqueta padre, solo ocupe una parte */
+    display: grid;
+    justify-content: center;
+    /* gap se pone para agregar espacio entre cada fila */
+    gap: 20px;
+}
+
+.presentacion h1 {
+    font-size: 50px;
+}
+
+.presentacion h2 {
+    font-size: 20px;
+}
+
+.presentacion h3 {
+    font-size: 16px;
+
+}
+
+.whatsapp-link {
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* en este casi el gap se aplica dandole espacio entre cada columna, y no fila por lo que esta en flex */
+    gap: 10px;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
